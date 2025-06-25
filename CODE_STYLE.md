@@ -38,14 +38,20 @@ Getters and Setters should be used only if additional logic is required.
 Use spaces with a width of 4 for indentation of code files, while data files, such as JSON, should use spaces with a width of 2. 
 Avoid over-indentation that causes code to not fit on the screen; generally, avoid indentation greater than 6.
 
+### Line Length
+Avoid having lines that go off the screen; this is generally around 120 characters.
+
 ### Blocks
-Keep opening brackets and braces inline; this is to keep vertical space more compact.
+Keep opening brackets and braces inline; this is to keep vertical space more compact, and avoid using implicit if statement bodies.
 
 ### Functions
 Avoid single-use functions that are only used in one or two places; if they can be inlined, then do so.
 
 ### Variables
 Avoid unnecessary memory allocation and the creation of variables that are calculated and only used once.
+
+### White Space
+Use operator spacing for operators, and a space between opening braces and the parentheses of flow control statements.
 
 ## EXAMPLES
 
