@@ -20,8 +20,8 @@ This is just my general style.
 - **Enum Value Names**: `MACRO_CASE`
 
 ### Hungarian Notation
-- **Static Member Variable/Function**: `s_` prefix
 - **Private Member Variable/Function**: `_` prefix
+- **Static Member Variable/Function**: `s_` prefix
 - **Internal Member Variable**: `i_` prefix
 - **Protected Member Variable**: `p_` prefix
 - **Public Member Variable**: `m_` prefix
