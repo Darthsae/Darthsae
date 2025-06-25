@@ -1,4 +1,6 @@
-This is just my general style.
+# Darthsae's Official Unofficial Personal Code Style and Architectural Style Guide
+
+This is my personal style.
 
 ## Naming Conventions
 
