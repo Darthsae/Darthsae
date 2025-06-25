@@ -24,7 +24,6 @@ This is just my general style.
 - **Static Member Variable/Function**: `s_` prefix
 - **Internal Member Variable**: `i_` prefix
 - **Protected Member Variable**: `p_` prefix
-- **Public Member Variable**: `m_` prefix
 - **Global Variable**: `g_` prefix
 - **Parameters**: `a_` prefix 
 - **Interface**: `I` prefix 
@@ -35,7 +34,8 @@ This is just my general style.
 Use static typing, or type hints.
 
 ### Getters/Setters
-Getters and Setters should be used only if additional logic is required; this includes auto-generated getters and setters.
+Getters and setters should be used only if additional logic is required; this includes auto-generated getters and setters.
+Usage of language-specific methods of auto-generation of getters and setters is allowed if getters and setters are needed.
 
 ### Indentation
 Use spaces with a width of 4 for indentation of code files, while data files, such as JSON, should use spaces with a width of 2. 
@@ -59,8 +59,8 @@ Use operator spacing for operators, and a space between opening braces and the p
 ## Documentation
 
 ### Comments
-Avoid comments about the function of code generally, this is best seen from the code, as comments get outdated.
-If the code is too complex to understand, then the use of comments is advised, but ensure they are kept up to date.
+Avoid comments about the function of code generally; this is best seen from the code, as comments become outdated.
+If the code is too complex to understand, then the usage of comments is advised, but ensure they are kept up to date.
 
 ## EXAMPLES
 
