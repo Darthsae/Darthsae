@@ -33,7 +33,14 @@ This is just my general style.
 Getters and Setters should be used only if additional logic is required.
 
 ### Indentation
-Use spaces with a width of 4 for indentation of code files, while data files, such as JSON, should use spaces with a width of 2.
+Use spaces with a width of 4 for indentation of code files, while data files, such as JSON, should use spaces with a width of 2. 
+Avoid over-indentation that causes code to not fit on the screen; generally, avoid indentation greater than 6.
 
 ### Blocks
-Keep opening brackets and braces inline.
+Keep opening brackets and braces inline; this is to keep vertical space more compact.
+
+### Functions
+Avoid single-use functions that are only used in one or two places; if they can be inlined, then do so.
+
+### Variables
+Avoid unnecessary memory allocation and the creation of variables that are calculated and only used once.
