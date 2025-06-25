@@ -101,3 +101,24 @@ namespace MyNamespace {
     }
 }
 ```
+
+### Python
+
+```python
+class MyEnum(Enum):
+    VALUE_ONE = 0
+    VALUE_TWO = 1
+    VALUE_THREE = 2
+
+class MyClass:
+    EnumTypes: list[MyEnum]
+
+    def __init__(self, a_amount: float):
+        self._amount = a_amount
+
+    def SetAmount(self, a_amount: float) -> None:
+        self._amount = self._amount * len(MyClass.EnumTypes) / (self._amount - a_amount)
+
+    def GetAmount(self) -> float:
+        return self._amount * 4
+```
