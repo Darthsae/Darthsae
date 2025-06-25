@@ -228,24 +228,21 @@ namespace MyNamespace {
 ```python
 class MyEnum(Enum)::
     """Brief description of the enum.
-    """
+	"""
+
     VALUE_ONE = 0
-    """Brief description of the enumerator.
-    """
+    """Brief description of the enumerator."""
     VALUE_TWO = 1
-    """Brief description of the enumerator.
-    """
+    """Brief description of the enumerator."""
     VALUE_THREE = 2
-    """Brief description of the enumerator.
-    """
+    """Brief description of the enumerator."""
 
 class MyClass:
     """Brief description of the class.
     """
 
     s_EnumTypes: list[MyEnum] = []
-    """Brief description of the static variable.
-    """
+    """Brief description of the static variable."""
 
     def __init__(self, a_amount: float):
         """Brief description of the constructor.
