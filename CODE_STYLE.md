@@ -26,10 +26,10 @@ This is my personal style.
 |:---:|:-----------------------|:--------:|:-------|
 |1st  |**private**             |prefix    |`m_`    |
 |2nd  |**static**              |prefix    |`s_`    |
-|3rd  |**volatile**            |prefix    |`vol_`  |
-|3rd  |**atomic**              |prefix    |`ato_`  |
-|3rd  |**synchronized**        |prefix    |`syn_`  |
-|3rd  |**external**            |prefix    |`ext_`  |
+|3rd  |**volatile**            |prefix    |`V_`    |
+|3rd  |**atomic**              |prefix    |`A_`    |
+|3rd  |**synchronized**        |prefix    |`S_`    |
+|3rd  |**external**            |prefix    |`E_`    |
 |1st  |**internal**            |prefix    |`i_`    |
 |1st  |**protected**           |prefix    |`p_`    |
 |1st  |**file**                |prefix    |`f_`    |
@@ -43,8 +43,8 @@ This is my personal style.
 ##### Examples
 
 ```csharp
-private volatile int volp_value;
-private static int sp_Value;
+private volatile int Vm_value;
+private static int sm_Value;
 ```
 
 ## Conventions
