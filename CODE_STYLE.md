@@ -28,8 +28,11 @@ This is my personal style.
 |2nd  |**static**              |prefix    |`s_`    |
 |3rd  |**volatile**            |prefix    |`vol_`  |
 |3rd  |**atomic**              |prefix    |`ato_`  |
+|3rd  |**synchronized**        |prefix    |`syn_`  |
+|3rd  |**external**            |prefix    |`ext_`  |
 |1st  |**internal**            |prefix    |`i_`    |
 |1st  |**protected**           |prefix    |`p_`    |
+|1st  |**file**                |prefix    |`f_`    |
 |1st  |**global**              |prefix    |`g_`    |
 |1st  |**parameters**          |prefix    |`a_`    |
 |1st  |**interface**           |prefix    |`I`     |
