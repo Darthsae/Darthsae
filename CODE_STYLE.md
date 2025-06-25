@@ -51,7 +51,7 @@ Keep opening brackets and braces inline; this is to keep vertical space more com
 Always have explicit flow control bodies.
 
 ### Functions
-Avoid single-use functions that are only used in one or two places; if they can be inlined, then do so.
+Avoid single-use functions that are only used in one or two places; if they can be inlined, then do so; logic hidden behind function calls is not clarity.
 
 ### Variables
 Avoid unnecessary memory allocation and the creation of variables that are calculated and only used once.
@@ -59,9 +59,18 @@ Avoid unnecessary memory allocation and the creation of variables that are calcu
 ### White Space
 Use operator spacing for operators, and a space between opening braces and the parentheses of flow control statements.
 
+```c
+if (a < 4) {
+    a++;
+}
+```
+
 ### Errors
 Prefer the use of errors as values instead of exceptions.
 Exceptions should only be used for states that are irrecoverable due to something *crucial* failing.
+
+### Abstraction
+Abstraction is not the ultimate goal; it is a tool to be used; do not make code more broken up just to abstract when it provides no benefit.
 
 ## Documentation
 
