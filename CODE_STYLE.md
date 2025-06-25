@@ -30,8 +30,8 @@ This is just my general style.
 
 ## Conventions
 
-### Static Typing
-Use static typing, or type hints.
+### Typing
+Use static typing, or type hints; avoid type inferences when possible.
 
 ### Getters/Setters
 Getters and setters should be used only if additional logic is required; this includes auto-generated getters and setters.
@@ -56,11 +56,64 @@ Avoid unnecessary memory allocation and the creation of variables that are calcu
 ### White Space
 Use operator spacing for operators, and a space between opening braces and the parentheses of flow control statements.
 
+### Errors
+Prefer the use of errors as values instead of exceptions.
+
 ## Documentation
 
 ### Comments
 Avoid comments about the function of code generally; this is best seen from the code, as comments become outdated.
 If the code is too complex to understand, then the usage of comments is advised, but ensure they are kept up to date.
+
+### Code Documentation
+You should have documentation for your code, via tools such as doxygen, XML, or docstrings.
+
+#### General Guidelines
+- **Be consistent** with documentation across files, classes, methods, and variables.
+- **Be clear and concise** with descriptions, only use longer descriptions when necessary.
+
+---
+
+#### File Headers
+Each file should include a header comment describing the file's purpose and what is in it.
+
+---
+
+#### Namespaces
+Namespaces should have a description to clarify their purpose, what belongs in them, and their scope.
+
+---
+
+#### Classes/Structs
+Classes and structs should be documented with a summary of their purpose, along with detailed descriptions for constructors, methods, and member variables.
+
+---
+
+#### Type Aliasing
+Provide clear descriptions of type alias declarations.
+
+---
+
+#### Variables
+Global variables and public members should be documented as to their purpose and the data they hold.
+This should include any important information relating to its use.
+
+---
+
+#### Functions / Methods
+Every function or method must include a description of its parameters, return values, and the purpose of the function.
+
+---
+
+#### Enums
+Each enumerator in an enum should be documented.
+
+---
+
+#### Templates/Generics
+Template parameters should be described in detail.
+
+---
 
 ## EXAMPLES
 
