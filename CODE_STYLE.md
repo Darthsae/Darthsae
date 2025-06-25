@@ -49,6 +49,8 @@ Avoid unnecessary memory allocation and the creation of variables that are calcu
 
 ## EXAMPLES
 
+### C++
+
 ```cpp
 class MyClass {
 public:
@@ -65,6 +67,8 @@ struct MyStruct {
     int m_y;
 };
 ```
+
+### C#
 
 ```csharp
 namespace MyNamespace {
