@@ -30,6 +30,9 @@ This is just my general style.
 
 ## Conventions
 
+### Static Typing
+Use static typing, or type hints.
+
 ### Getters/Setters
 Getters and Setters should be used only if additional logic is required; this includes auto-generated getters and setters.
 
@@ -51,6 +54,12 @@ Avoid unnecessary memory allocation and the creation of variables that are calcu
 
 ### White Space
 Use operator spacing for operators, and a space between opening braces and the parentheses of flow control statements.
+
+## Documentation
+
+### Comments
+Avoid comments about the function of code generally, this is best seen from the code, as comments get outdated.
+If the code is too complex to understand, then the use of comments is advised, but ensure they are kept up to date.
 
 ## EXAMPLES
 
