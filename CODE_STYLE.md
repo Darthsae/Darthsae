@@ -22,15 +22,24 @@ This is my personal style.
 - **Enum Value Names**: `MACRO_CASE`
 
 ### Hungarian Notation
+|Order|Case                    |Type      |Modifier|
+|-----|:-----------------------|:---------|:-------|
+|1st  |private                 |prefix    |`m_`    |
+
+
 - **Private Member Variable/Function**: `_` prefix, if this is reserved in the language, use the `m_` prefix
 - **Static Member Variable/Function**: `s_` prefix
-- **Internal Member Variable**: `i_` prefix
-- **Protected Member Variable**: `p_` prefix
 - **Volatile Member Variable/Function**: `vol_` prefix
 - **Atomic Member Variable/Function**: `ato_` prefix
+- **Internal Member Variable**: `i_` prefix
+- **Protected Member Variable**: `p_` prefix
 - **Global Variable**: `g_` prefix
 - **Parameters**: `a_` prefix 
-- **Interface**: `I` prefix 
+- **Interface**: `I` prefix
+
+#### Combination
+
+
 
 ## Conventions
 
