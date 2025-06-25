@@ -35,6 +35,26 @@ This is my personal style.
 ### Typing
 Use static typing, or type hints; avoid type inferences when possible.
 
+**BAD**
+```csharp
+for (var a in intArrayObject) {
+}
+```
+
+```python
+variable = 3
+```
+
+**GOOD**
+```csharp
+for (int a in intArrayObject)  {
+}
+```
+
+```python
+variable: int = 3
+```
+
 ### Getters/Setters
 Getters and setters should be used only if additional logic is required; this includes auto-generated getters and setters.
 The usage of language-specific generation of getters and setters is allowed if getters and setters are required.
