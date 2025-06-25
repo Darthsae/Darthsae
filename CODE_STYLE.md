@@ -35,7 +35,7 @@ Use static typing, or type hints; avoid type inferences when possible.
 
 ### Getters/Setters
 Getters and setters should be used only if additional logic is required; this includes auto-generated getters and setters.
-Usage of language-specific methods of auto-generation of getters and setters is allowed if getters and setters are needed.
+The usage of language-specific generation of getters and setters is allowed if getters and setters are required.
 
 ### Indentation
 Use spaces with a width of 4 for indentation of code files, while data files, such as JSON, should use spaces with a width of 2. 
@@ -45,7 +45,8 @@ Avoid over-indentation that causes code to not fit on the screen; generally, avo
 Avoid having lines that go off the screen; this is generally around 120 characters.
 
 ### Blocks
-Keep opening brackets and braces inline; this is to keep vertical space more compact, and avoid using implicit if statement bodies.
+Keep opening brackets and braces inline; this is to keep vertical space more compact. 
+Always have explicit flow control bodies.
 
 ### Functions
 Avoid single-use functions that are only used in one or two places; if they can be inlined, then do so.
@@ -63,7 +64,7 @@ Prefer the use of errors as values instead of exceptions.
 
 ### Comments
 Avoid comments about the function of code generally; this is best seen from the code, as comments become outdated.
-If the code is too complex to understand, then the usage of comments is advised, but ensure they are kept up to date.
+Only if the code is too complex to understand on its own should comments be used.
 
 ### Code Documentation
 You should have documentation for your code, via tools such as doxygen, XML, or docstrings.
