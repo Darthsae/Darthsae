@@ -20,7 +20,7 @@ This is just my general style.
 - **Enum Value Names**: `MACRO_CASE`
 
 ### Hungarian Notation
-- **Private Member Variable/Function**: `_` prefix
+- **Private Member Variable/Function**: `_` prefix, if this is reserved in the language, use the `m_` prefix
 - **Static Member Variable/Function**: `s_` prefix
 - **Internal Member Variable**: `i_` prefix
 - **Protected Member Variable**: `p_` prefix
@@ -74,12 +74,12 @@ public:
     int MyMethod(int a_value) const;
 
 private:
-    int _privateMemberVariable;
+    int m_privateMemberVariable;
 };
 
 struct MyStruct {
-    int m_x;
-    int m_y;
+    int x;
+    int y;
 };
 ```
 
