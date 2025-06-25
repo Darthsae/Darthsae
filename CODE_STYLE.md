@@ -111,7 +111,7 @@ class MyEnum(Enum):
     VALUE_THREE = 2
 
 class MyClass:
-    EnumTypes: list[MyEnum]
+    EnumTypes: list[MyEnum] = []
 
     def __init__(self, a_amount: float):
         self._amount = a_amount
