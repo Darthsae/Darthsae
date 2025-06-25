@@ -24,6 +24,8 @@ This is just my general style.
 - **Internal Member Variable**: `i_` prefix
 - **Protected Member Variable**: `p_` prefix
 - **Public Member Variable**: `m_` prefix
+- **Global Variable**: `g_` prefix
+- **Local Variable**: `l_` prefix
 - **Parameters**: `a_` prefix 
 - **Interface**: `I` prefix 
 
@@ -44,3 +46,48 @@ Avoid single-use functions that are only used in one or two places; if they can 
 
 ### Variables
 Avoid unnecessary memory allocation and the creation of variables that are calculated and only used once.
+
+## EXAMPLES
+
+```cpp
+class MyClass {
+public:
+    MyClass(int a_param1, double a_param2);
+
+    int MyMethod(int a_value) const;
+
+private:
+    int _privateMemberVariable;
+};
+
+struct MyStruct {
+    int m_x;
+    int m_y;
+};
+```
+
+```csharp
+namespace MyNamespace {
+    public enum MyEnum {
+        STATE_ONE = 0,
+        STATE_TWO = 1,
+        STATE_THREE = 2
+    }
+
+    public interface IMyInterface {
+        public int GetValue();
+    }
+
+    public class MyClass : IMyInterface {
+        protected int p_value;
+
+        public MyClass(int a_value = 24) {
+            p_value = a_value;
+        }
+
+        public int GetValue() {
+            return p_value;
+        }
+    }
+}
+```
