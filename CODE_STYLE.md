@@ -31,7 +31,7 @@ This is just my general style.
 ## Conventions
 
 ### Getters/Setters
-Getters and Setters should be used only if additional logic is required.
+Getters and Setters should be used only if additional logic is required; this includes auto-generated getters and setters.
 
 ### Indentation
 Use spaces with a width of 4 for indentation of code files, while data files, such as JSON, should use spaces with a width of 2. 
