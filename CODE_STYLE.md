@@ -25,7 +25,6 @@ This is just my general style.
 - **Protected Member Variable**: `p_` prefix
 - **Public Member Variable**: `m_` prefix
 - **Global Variable**: `g_` prefix
-- **Local Variable**: `l_` prefix
 - **Parameters**: `a_` prefix 
 - **Interface**: `I` prefix 
 
