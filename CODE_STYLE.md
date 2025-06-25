@@ -190,6 +190,12 @@ namespace MyNamespace {
     /// Detailed description of the interface.
     /// </summary>
     public interface IMyInterface {
+        /// <summary>
+        /// Detailed description of the function.
+        /// </summary>
+        /// <returns>
+        /// Brief description of the return.
+        /// </returns>
         public int GetValue();
     }
 
