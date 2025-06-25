@@ -17,6 +17,9 @@ I have my bio, but here is some extra stuff.
 - ASL (A tiny amount)
 - Latin (A microscopic amount)
 
+## Other Docs
+[Code Style](CODE_STYLE.md)
+
 <!--
 **Darthsae/Darthsae** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
