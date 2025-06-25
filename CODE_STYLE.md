@@ -23,23 +23,19 @@ This is my personal style.
 
 ### Hungarian Notation
 |Order|Case                    |Type      |Modifier|
-|-----|:-----------------------|:---------|:-------|
-|1st  |private                 |prefix    |`m_`    |
-
-
-- **Private Member Variable/Function**: `_` prefix, if this is reserved in the language, use the `m_` prefix
-- **Static Member Variable/Function**: `s_` prefix
-- **Volatile Member Variable/Function**: `vol_` prefix
-- **Atomic Member Variable/Function**: `ato_` prefix
-- **Internal Member Variable**: `i_` prefix
-- **Protected Member Variable**: `p_` prefix
-- **Global Variable**: `g_` prefix
-- **Parameters**: `a_` prefix 
-- **Interface**: `I` prefix
+|:---:|:-----------------------|:--------:|:-------|
+|1st  |**private**             |prefix    |`m_`    |
+|2nd  |**static**              |prefix    |`s_`    |
+|3rd  |**volatile**            |prefix    |`vol_`  |
+|3rd  |**atomic**              |prefix    |`ato_`  |
+|1st  |**internal**            |prefix    |`i_`    |
+|1st  |**protected**           |prefix    |`p_`    |
+|1st  |**global**              |prefix    |`g_`    |
+|1st  |**parameters**          |prefix    |`a_`    |
+|1st  |**interface**           |prefix    |`I`     |
 
 #### Combination
-
-
+`3rd prefix` `2nd prefix` `1st prefix` `Case Name`
 
 ## Conventions
 
