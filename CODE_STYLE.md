@@ -232,7 +232,7 @@ namespace MyNamespace {
 ### Python
 
 ```python
-class MyEnum(Enum)::
+class MyEnum(Enum):
     """Brief description of the enum.
 	"""
 
