@@ -120,43 +120,102 @@ Template parameters should be described in detail.
 ### C++
 
 ```cpp
-class MyClass {
-public:
-    MyClass(int a_param1, double a_param2);
+/**
+ * @file MyClass.h
+ * @brief Header file for the MyClass class.
+ *
+ * Detailed description of the file, including purpose and usage details if necessary.
+ */
 
-    int MyMethod(int a_value) const;
+/**
+ * @namespace MyNamespace
+ * @brief Brief description of the namespace.
+ */
+namespace MyNamespace {
+    /**
+     * @class MyClass
+     * @brief Brief description of the class.
+     *
+     * Detailed description of the class, including purpose and design notes.
+     */
+    class MyClass {
+    public:
+        /**
+         * @brief Constructs a new MyClass object.
+         * @param a_value The value to initialize.
+         */
+        MyClass(int a_value);
+    
+        /**
+         * @brief Retrieves the stored value.
+         * @return The current value.
+         */
+        int GetValue() const;
+    
+    private:
+        int m_value; ///< Brief description of the member variable.
+    };
 
-private:
-    int m_privateMemberVariable;
-};
-
-struct MyStruct {
-    int x;
-    int y;
-};
+    /**
+     * @struct MyStruct
+     * @brief Brief description of the struct.
+     *
+     * Detailed description of the struct, including purpose and design notes.
+     */
+    struct MyStruct {
+        int valueOne; ///< Brief description of the member variable.
+        int valueTwo; ///< Brief description of the member variable.
+    };
+}
 ```
 
 ### C#
 
 ```csharp
+/// <summary>
+/// Brief description of the namespace.
+/// </summary>
 namespace MyNamespace {
+    /// <summary>
+    /// Detailed description of the enum.
+    /// </summary>
     public enum MyEnum {
-        STATE_ONE = 0,
-        STATE_TWO = 1,
-        STATE_THREE = 2
+        STATE_ONE = 0,  //
+        STATE_TWO = 1,  //
+        STATE_THREE = 2 //
     }
 
+
+    /// <summary>
+    /// Detailed description of the interface.
+    /// </summary>
     public interface IMyInterface {
         public int GetValue();
     }
 
+
+    /// <summary>
+    /// Detailed description of the class.
+    /// </summary>
     public class MyClass : IMyInterface {
         protected int p_value;
 
+        /// <summary>
+        /// Detailed description of the class.
+        /// </summary>
+		/// <param name="a_value">
+        /// Brief description of the parameter.
+        /// </param>
         public MyClass(int a_value = 24) {
             p_value = a_value;
         }
 
+        /// <summary>
+        /// Detailed description of the function.
+        /// </summary>
+        /// <returns>
+        /// Brief description of the return.
+        /// </returns>
         public int GetValue() {
             return p_value;
         }
@@ -167,20 +226,53 @@ namespace MyNamespace {
 ### Python
 
 ```python
-class MyEnum(Enum):
+class MyEnum(Enum)::
+    """Brief description of the enum.
+    """
     VALUE_ONE = 0
+    """Brief description of the enumerator.
+    """
     VALUE_TWO = 1
+    """Brief description of the enumerator.
+    """
     VALUE_THREE = 2
+    """Brief description of the enumerator.
+    """
 
 class MyClass:
-    EnumTypes: list[MyEnum] = []
+    """Brief description of the class.
+    """
+
+    s_EnumTypes: list[MyEnum] = []
+    """Brief description of the static variable.
+    """
 
     def __init__(self, a_amount: float):
+        """Brief description of the constructor.
+
+        Args:
+            a_amount (float): Brief description of the parameter.
+        """
+
         self._amount = a_amount
+        """Brief description of the member variable.
+        """
 
     def SetAmount(self, a_amount: float) -> None:
+        """Brief description of the function.
+
+        Args:
+            a_amount (float): Brief description of the parameter.
+        """
+
         self._amount = self._amount * len(MyClass.EnumTypes) / (self._amount - a_amount)
 
     def GetAmount(self) -> float:
+        """Brief description of the function.
+
+        Returns:
+            float: Description of the return.
+        """
+
         return self._amount * 4
 ```
