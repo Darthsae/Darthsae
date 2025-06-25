@@ -36,20 +36,30 @@ This is my personal style.
 Use static typing, or type hints; avoid type inferences when possible.
 
 **BAD**
+
+C#
+
 ```csharp
 for (var a in intArrayObject) {
 }
 ```
+
+Python
 
 ```python
 variable = 3
 ```
 
 **GOOD**
+
+C#
+
 ```csharp
 for (int a in intArrayObject)  {
 }
 ```
+
+Python
 
 ```python
 variable: int = 3
