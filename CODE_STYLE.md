@@ -59,6 +59,7 @@ Use operator spacing for operators, and a space between opening braces and the p
 
 ### Errors
 Prefer the use of errors as values instead of exceptions.
+Exceptions should only be used for states that are irrecoverable due to something *crucial* failing.
 
 ## Documentation
 
