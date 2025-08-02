@@ -1,6 +1,6 @@
 # Darthsae's Official Unofficial Personal Code Style and Architectural Style Guide
 
-This is my personal style.
+This is my own personal style for C, C++, C#, Python, and Java.
 
 ## Naming Conventions
 
@@ -24,21 +24,22 @@ This is my personal style.
 ### Hungarian Notation
 |Order|Case                    |Type      |Modifier|
 |:---:|:-----------------------|:--------:|:-------|
-|1st  |**private**             |prefix    |`m_`    |
-|2nd  |**static**              |prefix    |`s_`    |
+|4th  |**parameter**           |prefix    |`a_`    |
+|4th  |**iteration variable**  |prefix    |`j_`    |
 |3rd  |**volatile**            |prefix    |`V_`    |
 |3rd  |**atomic**              |prefix    |`A_`    |
 |3rd  |**synchronized**        |prefix    |`S_`    |
 |3rd  |**external**            |prefix    |`E_`    |
+|2nd  |**static**              |prefix    |`s_`    |
+|1st  |**private**             |prefix    |`m_`    |
 |1st  |**internal**            |prefix    |`i_`    |
 |1st  |**protected**           |prefix    |`p_`    |
 |1st  |**file**                |prefix    |`f_`    |
 |1st  |**global**              |prefix    |`g_`    |
-|1st  |**parameters**          |prefix    |`a_`    |
 |1st  |**interface**           |prefix    |`I`     |
 
 #### Combination
-`3rd prefix` `2nd prefix` `1st prefix` `Case Name`
+`4th prefix` `3rd prefix` `2nd prefix` `1st prefix` `Case Name`
 
 ##### Examples
 
@@ -57,7 +58,7 @@ Use static typing, or type hints; avoid type inferences when possible.
 C#
 
 ```csharp
-for (var a in intArrayObject) {
+for (var a in j_intArrayObject) {
 }
 ```
 
@@ -72,7 +73,7 @@ variable = 3
 C#
 
 ```csharp
-for (int a in intArrayObject)  {
+for (int a in j_intArrayObject)  {
 }
 ```
 
