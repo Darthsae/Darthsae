@@ -25,7 +25,7 @@ This is my own personal style for C, C++, C#, Python, and Java.
 |Order|Case                    |Type      |Modifier|
 |:---:|:-----------------------|:--------:|:-------|
 |4th  |**parameter**           |prefix    |`a_`    |
-|4th  |**iteration variable**  |prefix    |`j_`    |
+|4th  |**iteration variable**  |prefix    |`I_`    |
 |3rd  |**volatile**            |prefix    |`V_`    |
 |3rd  |**atomic**              |prefix    |`A_`    |
 |3rd  |**synchronized**        |prefix    |`S_`    |
